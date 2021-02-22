@@ -16,6 +16,10 @@ export default {
             type: "text",
         },
         {
+            name: "link",
+            type: "url",
+        },
+        {
             name: "projectType",
             title: "Project type",
             type: "string",

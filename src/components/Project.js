@@ -12,6 +12,7 @@ export default function Project() {
             place,
             description,
             projectType,
+            link,
         }`
       )
       .then((data) => setProjectData(data))
@@ -30,7 +31,7 @@ export default function Project() {
             projectData.map((project, index) => (
               <article className="relative rounded-lg shadow-xl bg-white p-16">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-purple-700 flex justify-center text-center">
-                  <h2>{project.title}</h2>
+                  <a href={project.link} alt={project.title} target="_blank" rel="noopener noreffer"> {project.title}</a>
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4">
                   <span>
